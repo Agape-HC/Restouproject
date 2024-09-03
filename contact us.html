@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-container, .map-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            box-sizing: border-box;
+            width: 100%;
+            max-width: 600px;
+        }
+
+        h2 {
+            color:     #914103;
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            color: #555;
+        }
+
+        input, select, textarea {
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid   #914103;
+            border-top: 0px;
+            border-left: 0px;
+            border-right: 0px;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        input[type="submit"] {
+            background-color:  #914103;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #712e08;
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color:  #914103;
+      height: 10px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      color: #f2f2f2;
+    }
+    a {
+  text-decoration: none;
+  color: #0c0c0c;
+  font-weight: bold;
+}
+ .goback-button{
+  position: absolute;
+  left: 80px;
+  top: 90px;
+  font-size: 140%;
+ }
+    </style>
+</head>
+<body>
+    <div class="goback-button" style="position: fixed;">
+        <a href="index.html">
+          <span>&larr; Go Back</span>
+        </a>
+      </div>
+
+    <div class="form-container">
+        <h2>Contact Us.</h2>
+
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="general">General Inquiry</option>
+                <option value="reservation">Reservation</option>
+                <option value="feedback">Feedback</option>
+            </select>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div class="map-container">
+        <h2>Our Location.</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12345.678901234567!2d-74.005972!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDE0JzI0LjYiTiA3NMKwMzMnMzQuMiJX!5e0!3m2!1sen!2sus!4v1634287890123!5m2!1sen!2sus" allowfullscreen></iframe>
+    </div>
+    <br><br>
+    <footer>
+        &copy; 2024 CADS HEALTH Plus. All rights reserved.
+      </footer>
+
+</body>
+</html>

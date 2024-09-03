@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Feature</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            width: auto;
+        }
+
+        .photo-wall {
+            
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            
+            padding: 20px;
+        }
+
+        .photo-card {
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+            width: 500px;
+            height: 400px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        
+        .photo-card:hover {
+           
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .photo-card img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .photo-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .photo-card:hover .photo-info {
+            opacity: 1;
+        }
+        .sec2{
+            float: left;
+            width: auto;
+            margin-left: 6px;
+            margin-right: 8px;
+            margin-top: 2px;
+            padding-left: 5px;
+        }
+        
+        .sec2:hover img {
+            
+            box-shadow: 10px 15px 15px 10px  rgb(69, 73, 73);
+        }
+        .p2{
+            margin-top: 30px;
+            border: 0px solid burlywood;
+            border-radius: 20px;
+            margin-top: 22px;
+        
+        }
+        .p12{
+            margin-top: 6px;
+            border: 0px solid burlywood;
+            border-radius: 20px;
+        
+        }
+        a {
+  text-decoration: none;
+  color: #0c0c0c;
+  font-weight: bold;
+}
+ .goback-button{
+  position:relative;
+  left: 5px;
+  top: 15px;
+  font-size: 140%;
+ }
+ #titl{
+    font-size: 150%;
+    color:  #914103;
+ }
+
+ footer {
+    position: fixed;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      bottom: 0;
+      width: 98%;
+      margin-bottom: 0px;
+      margin-top: 500px;
+    }
+    </style>
+</head>
+<body>
+    <center>
+        <p id="titl"><b>Featured drinks.</b></p>
+    </center>
+    <div class="goback-button" style="position: fixed;">
+        <a href="index.html">
+          <span>&larr; Go Back</span>
+        </a>
+      </div>
+    <div class="photo-wall">
+        <div class="photo-card">
+            <img src="photos/smoothies-in-4-leckeren-varianten.webp" alt="Dish 1">
+            <div class="photo-info">
+                <h3>Fresh juice</h3>
+                <p>Made from fresh fruits, brended to perfection.</p>
+            </div>
+        </div>
+        <div class="photo-card">
+            <img src="photos/f.jpg" alt="Dish 2">
+            <div class="photo-info">
+                <h3>Smoothies.</h3>
+                <p>Mixed fruits and vegetals, not brended to perfection.</p>
+            </div>
+        </div>
+        
+    </div>
+    <center>
+    <p id="titl"><b>Featured Food.</b></p>
+</center>
+    <div>
+        <div class="sec2">
+            <img src="photos/fatued.avif" height="270px" width="350px" class="p2">
+            <center><p><b>fried chicken meat </b></p>
+                <p>THis Recipe , is mixed with</p>
+            </center>
+        </div>
+        <div class="sec2">
+            <img src="photos/Featured d& dri (2).jpg" height="320px" width="500px" class="p12">
+            <center><p><b>Chinese food</b></p>
+                <p>Recepe is a combination of.....</p>
+            </center>
+        
+        </div>
+        <div class="sec2">
+            <img src="photos/Featured d& dri (3).jpg" height="270px" width="350px" class="p2">
+            <center><p><b>Italliano food</b></p>
+                <p>Cocoa made of ....</p>
+            </center>
+        </div>
+        <br><br>
+    </div>
+    <footer>
+        &copy; 2024 CADS HEALTH Plus. All rights reserved.
+      </footer>
+</body>
+</html>
